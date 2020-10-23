@@ -12,7 +12,8 @@ import sys
 
 # path to modules used to calculate similarity
 # modPath = "/gpfs/cfel/cxi/scratch/user/gelisio/shared/calcSimilarities/"
-modPath = "/Users/beyerlein/Work/LaserSiHighPressurePhases/Analysis/"
+# modPath = "/Users/beyerlein/Work/LaserSiHighPressurePhases/Analysis/"
+modPath = "./mods/"
 sys.path.append(modPath)
 
 import ImageAnalysis as iA
