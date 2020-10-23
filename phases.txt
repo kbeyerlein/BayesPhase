@@ -1,0 +1,2 @@
+Si-C2-32 ./hklLists/Si-C2-32.HKL.h5
+Si-Ia-3 ./hklLists/Si-Ia-3.HKL.h5
