@@ -1,0 +1,15 @@
+To run:
+python calcSimilarity.py image.Q phases.txt output.npz
+
+Will analyze image.Q using phase info listed in phases.txt file and output to output.npz file.
+
+
+calcSimilarities.py is a program that 
+1. Loads diffraction spot information from a ".Q" file format.
+2. Removes Spots that have Qr similar to Si-I phase
+3. Loads precalculated database of Bragg spot info for phases
+4. Calculates similarity score of each spot Qr compared to given phase.
+5. Calculates similarity score of each spot with spot neighbors (2-point similarity) compared to a given phase.
+6. Outputs npz file with Qr Similarity scores, Best Qr HKL assignment and 2-point similariy scores
+
+
