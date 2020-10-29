@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
+
 import dataLoaders as loader
 
 L = 51095.755  # detector distance in pixels (found by Luca)
@@ -44,7 +45,8 @@ def genSpotPowder(imgName, dq, filetype="hit"):
     return bins[0:-1], Is
 
 def getSiQs():
-    Si_hkl, Si_d, Si_twoTheta = loader.loadHKLFile("Si_hkl.lst", path = os.getenv('SI_PATH', './'))
+    pathn = os.path.abspath(os.getcwd()) + '/hklLists/Si_hkl.lst'
+    Si_hkl, Si_d, Si_twoTheta = loader.loadHKLFile(pathn, path = os.getenv('SI_PATH', ''))
     return 1.0/Si_d
 
 def getPhasePowder(filename):

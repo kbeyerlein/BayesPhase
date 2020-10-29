@@ -32,7 +32,7 @@ def composeFilename(path, fileName, suffix):
     return fileName
     
 
-def loadHKLFile(file, path="./"):
+def loadHKLFile(file, path=""):
     filename = composeFilename(path, file, "")
     return loadFile(filename,1)
 
